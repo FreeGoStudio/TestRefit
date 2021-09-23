@@ -17,7 +17,7 @@ namespace TestRefit
             .CreateLogger();
 
             //使用Refit内置的RestService
-            var theCatAPI = RestService.For<ITheCatAPI>("https://api.thecatapi.com");
+            var theCatAPI = RestService.For<ITheCatAPI>("https://api.thecatapi.com/");
             //调用接口,接收结果
             var searchResult = await theCatAPI.Search("bengal");
 
